@@ -6,25 +6,9 @@ import "@hotwired/turbo-rails"
 import * as jquery from "jquery"
 import "semantic-ui"
 
-/*
-$(document).on('turbo:load', function() {
-  console.log('loaded turbo links')
-  $('.ui.dropdown').dropdown()
-});
-*/
-
-/*$(document).on('turbolinks:load', function() {
-  $('.ui.dropdown').dropdown();
-})
-*/
-
 $(document).on('turbo:load', function() {
   $('.ui.dropdown').dropdown();
   $('.message .close').on('click', function() {
     $(this).closest('.message').transition('fade');
   });
-})
-
-$(document).on('turbo:render', function() {
-  $('.ui.dropdown').dropdown();
 })
