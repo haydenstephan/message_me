@@ -94,4 +94,8 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+  #config.action_cable.alllowed_request_origins = ['https://messageme-26cef4cbaebb.herokuapp.com/']
+
+  config.active_record.dump_schema_after_migration = false
 end
